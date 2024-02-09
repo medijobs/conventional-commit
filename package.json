@@ -1,0 +1,33 @@
+{
+  "name": "@medijobs/conventional-commit",
+  "description": "Git commit binary powered by commitizen with conventional commit standard",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "bin": {
+    "conventional-commit": "index.js"
+  },
+  "main": "index.js",
+  "author": "TED Vortex <ted.vortex@gmail.com> (vortex.name)",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "bugs": "https://github.com/medijobs/conventional-commit/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/medijobs/conventional-commit.git"
+  },
+  "dependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "scripts": {
+    "push": "npx cz"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@medijobs/check-engines": "1.0.0"
+  }
+}
